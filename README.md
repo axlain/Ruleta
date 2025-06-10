@@ -114,18 +114,40 @@ docker-compose up
 
 ```
 ruleta/
+├── .vscode/
+│   └── tasks.json
 ├── backend/
 │   ├── casino.js
 │   ├── ruleta.js
-│   ├── espera-mysql.sh
+│   └── package.json
+├── data/
 │   └── ...
 ├── frontend/
-│   ├── index.html
+│   ├── css/
+│   │   ├── historial.css
+│   │   ├── login.css
+│   │   └── ruleta.css
+│   ├── img/
+│   │   └── ...
+│   ├── js/
+│   │   ├── historial.js
+│   │   ├── login.js
+│   │   └── main.js
 │   ├── historial.html
-│   └── img/
+│   ├── login.html
+│   └── ruleta.html
+├── mqtt/
+│   └── mqtt.conf
+├── mysql/
+│   └── init.mysql
+├── .dockerignore
+├── .gitattributes
+├── .gitignore
 ├── docker-compose.yml
+├── Dockerfile
+├── espera-mysql.sh
 ├── iniciar-ruleta.bat
-├── docker_cleanup.sh
+├── iniciar-ruleta.sh
 └── README.md
 ```
 
